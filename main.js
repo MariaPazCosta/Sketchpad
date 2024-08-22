@@ -1,6 +1,9 @@
 
 function createGrid(numColum, numbRow){
     const grid = document.querySelector(".grid")
+    let wid= (numColum*45)+"px"
+    console.log(wid)
+    grid.style.width = wid;
 
     for(let i= 0;i<numColum;i++){
         for(let j=0; j<numbRow;j++){
@@ -11,4 +14,4 @@ function createGrid(numColum, numbRow){
     }
 }
 
-createGrid(4,4)
+createGrid(10,10)
