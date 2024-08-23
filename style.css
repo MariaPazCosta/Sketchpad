@@ -46,8 +46,14 @@ nav{
     width: 40px;
 }
 
-button{
-    flex-basis: 40px;
+#buttons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+button, #submit{
     align-self:center;
     padding: 10px 15px;
     font-size: large;
@@ -58,4 +64,38 @@ button{
     background-color: rgb(206, 52, 52);
     color: rgb(255, 255, 255);
 
+}
+
+#modal{
+    background-color: rgb(255, 199, 199);
+    padding: 20px 30px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap:5px;
+}
+
+p{
+    margin: 0px;
+}
+#p-and-b{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 800;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: self-start;
+}
+
+#close{
+    align-self: flex-end;
+    font-size: small;
+    padding: 10px 15px;
 }
