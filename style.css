@@ -68,10 +68,13 @@ button, #submit{
 
 #modal{
     background-color: rgb(255, 199, 199);
+    margin: auto;
     padding: 20px 30px;
+
+    border: 4px solid rgb(206, 52, 52);
     border-radius: 15px;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
@@ -92,6 +95,8 @@ form{
     flex-direction: column;
     justify-content: flex-start;
     align-items: self-start;
+
+
 }
 
 #close{
@@ -99,3 +104,4 @@ form{
     font-size: small;
     padding: 10px 15px;
 }
+

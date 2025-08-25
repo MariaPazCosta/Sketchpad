@@ -10,14 +10,11 @@
     <nav>
         <h3>Sketchpad</h3>
     </nav>
-    <div id="container">
-        <div id="buttons">
-            <button id="popup">Change grid size</button>
+    <div id="buttons">
+            <button id="popup">Change grid size</button> <!--modal button-->
             <button id="clean-grid">Clean grid</button>
         </div>
-        
-        <div class="grid">
-        </div>
+        <!--MODAL-->
         <div id="modal">
             <div id="p-and-b">
                 <p>INPUT GRID SIZE</p>
@@ -25,15 +22,22 @@
             </div>
              <div id="form">
                 <form>
-                    <label for="columns">Columns: <input id="columns" name="columns"></label><br>
-                    <label for="rows">Rows:<input id="rows" name="rows"></label><br>
+                    <label for="columns">Columns: 
+                        <input id="columns" name="columns" max="64"></label><br>
+                    <label for="rows">Rows:
+                        <input id="rows" name="rows" max="64"></label><br>
                     <input id="submit" value="Accept" type="submit">
                 </form>
             </div>
-            
-            
         </div>
-    </div>
+        <div id="container">
+        
+            
+            <div class="grid">
+            </div>
+
+                
+        </div>
     <footer></footer>
     <script src="main.js"></script>
 </body>
